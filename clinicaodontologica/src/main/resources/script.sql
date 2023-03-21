@@ -1,0 +1,24 @@
+CREATE TABLE IF NOT EXISTS ODONTOLOGO (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    apellido VARCHAR,
+    nombre VARCHAR,
+    matricula INT
+);
+
+CREATE TABLE IF NOT EXISTS DOMICILIO (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    calle VARCHAR,
+    numero INT,
+    localidad VARCHAR,
+    provincia VARCHAR
+);
+
+CREATE TABLE IF NOT EXISTS PACIENTE (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    apellido VARCHAR,
+    nombre VARCHAR,
+    mail VARCHAR,
+    dni INT,
+    fechaIngreso DATE,
+    domicilio VARCHAR
+);
